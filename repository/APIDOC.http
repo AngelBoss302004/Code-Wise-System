@@ -1,0 +1,39 @@
+###
+GET http://127.0.0.1:8000/questions/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+
+{
+    "title":"Factorial of a number",
+    "language":"python",
+    "difficulty_level":"easy",
+    "topic":"Loops",
+    "notes":"This question is about calculating the factorial of a given number using loops",
+    "sample_input":"5",
+    "sample_output":"120",
+    "is_active":"true"
+}
+###
+PUT  http://127.0.0.1:8000/questions/1/
+Content-Type: application/json
+
+
+
+{
+    "title":"pyramid pattern",
+    "language":"java",
+    "difficulty_level":"easy",
+    "topic":"Loops",
+    "notes":"pattern printing in java",
+    "sample_input":"3",
+    "sample_output":"60",
+    "is_active":"true"
+}
+
+###
+DELETE http://127.0.0.1:8000/questions/1/
+Accept:application/json
